@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>赵雅洁，请签收</title>
+<link rel="stylesheet" href="css/zyj.css">
+</head>
+<body>
+
+    <div id="text">
+        <div id="code">
+            <span class="say"> 赵雅洁，当你看到这段独白的时候，也许我们，再也不会相见了,</span>
+            <span class="say">原谅我用这种方式跟你道别。</span></br></br>
+            <span class="say">不得不承认，生活中充满了惊喜和意外，之前我不知道哪个先来</span><br>
+            <span class="say">直到，你出现在了我的生活里,</span>
+            <span class="say">我觉得我没有必要去知道这个答案</span><br>
+            <span class="say">因为遇见你，就是我最大的惊喜,</span>
+            <span class="say">而有你在的意外，也不会太坏</span><br><br>
+            <span class="say">我承认我是一个花心的人，因为每天的你，我都喜欢。</span><br>
+            <span class="say">我承认我是一个很怂的人，越是喜欢的女孩，越不敢肆无忌惮的去撩,</span>
+            <span class="say">所以我只能用我自己的方式表达着喜欢。</span><br><br>
+            <span class="say">这里总共有521条射线，来填充中间这颗洁白的心。</span>
+            <span class="say">当这个心充满了红色的时候，我一定会回来找你。</span><br><br>
+            <span class="say">我想要说的话还有很多很多，但是我想要，余生跟你慢慢讲。</span><br><br>
+            <span class="say">生活很苦，所以我想把你这块糖儿，珍藏。</span><br></br>
+            <span class="say"> <span class="space"></span> -- By 你看到的我是蓝色的</span>
+        </div>
+    </div>
+    
+    <div id="clock-box">
+        <div id="clock"></div>
+    </div>
+<canvas width="300" height="300" style="width:100%;height:100vh;" id="c"></canvas>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script  src="js/zyj.js"></script>
+<script src="js/zyjfun.js"></script>
+<script>
+    setTimeout(() => {
+        // var typeing=function(){
+        //     var deferred= new $.Deferred();  // 创建一个deferred 实例
+            $("#code").show().typewriter();
+        //     return deferred.promise();
+        // };
+        // var timercount=function(){
+        //     // var deferred=  $.Deferred();
+        //     setInterval(function(){
+        //         console.log("万能充颗");
+        //     },1000);
+        //     // return deferred.promise();
+        // }
+        // $.when(typeing()).done(function(){
+        //     timercount();
+        // });
+        // deferred 还可以返回自己的操作子集   
+        // var promise=deferred.promise();  
+        // promise 只有绑定回调 的api ，而没有切换状态的api
+        // deferred;   reject  resolve  done fail then always
+        // promise  done fail then always   很明显  promise 是用来开放给外部调用的，而deferred 通常用于模块内部，来控制自身状态的切换
+
+        // $.when($.ajax('/page1.php'),$.ajax('/page2.php')).then(myFunc,myFailure);
+        //   then 除了简化，done 和fail 写法， 还有一个重要的作用，用来传递deferred(promise) 对象，实现任务链条（chain tasks）；
+    }, 6000);
+
+    // setInterval((meetyou) => {
+    //     var meetyou = new Date();
+    //     meetyou.setFullYear(2019, 7, 12);// 开始关注你的第一天
+    //     meetyou.setHours(20);
+    //     meetyou.setMinutes(20);
+    //     meetyou.setSeconds(0);
+    //     meetyou.setMilliseconds(0);
+    //     // console.log('其实事件',meetyou);
+    //     // console.log(Date.parse(meetyou));
+    //     timeElapse(meetyou);
+    //     $("#clock-box").fadeIn(500);
+    // }, 1000);
+
+</script>
+</body>
+</html>
