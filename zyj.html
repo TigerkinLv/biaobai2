@@ -36,44 +36,8 @@
 <script src="js/zyjfun.js"></script>
 <script>
     setTimeout(() => {
-        // var typeing=function(){
-        //     var deferred= new $.Deferred();  // 创建一个deferred 实例
-            $("#code").show().typewriter();
-        //     return deferred.promise();
-        // };
-        // var timercount=function(){
-        //     // var deferred=  $.Deferred();
-        //     setInterval(function(){
-        //         console.log("万能充颗");
-        //     },1000);
-        //     // return deferred.promise();
-        // }
-        // $.when(typeing()).done(function(){
-        //     timercount();
-        // });
-        // deferred 还可以返回自己的操作子集   
-        // var promise=deferred.promise();  
-        // promise 只有绑定回调 的api ，而没有切换状态的api
-        // deferred;   reject  resolve  done fail then always
-        // promise  done fail then always   很明显  promise 是用来开放给外部调用的，而deferred 通常用于模块内部，来控制自身状态的切换
-
-        // $.when($.ajax('/page1.php'),$.ajax('/page2.php')).then(myFunc,myFailure);
-        //   then 除了简化，done 和fail 写法， 还有一个重要的作用，用来传递deferred(promise) 对象，实现任务链条（chain tasks）；
+        $("#code").show().typewriter();
     }, 6000);
-
-    // setInterval((meetyou) => {
-    //     var meetyou = new Date();
-    //     meetyou.setFullYear(2019, 7, 12);// 开始关注你的第一天
-    //     meetyou.setHours(20);
-    //     meetyou.setMinutes(20);
-    //     meetyou.setSeconds(0);
-    //     meetyou.setMilliseconds(0);
-    //     // console.log('其实事件',meetyou);
-    //     // console.log(Date.parse(meetyou));
-    //     timeElapse(meetyou);
-    //     $("#clock-box").fadeIn(500);
-    // }, 1000);
-
 </script>
 </body>
 </html>
